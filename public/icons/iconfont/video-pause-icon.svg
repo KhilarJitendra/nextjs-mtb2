@@ -1,0 +1,11 @@
+<svg viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+    <g id="01-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05-[1440]-PDP-—-Video-Player-Fulscreen-—-Timeline-Hovering" transform="translate(-30.000000, -768.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Player" transform="translate(30.000000, 765.000000)">
+                <g id="Icon-/-Pause-/-White" transform="translate(0.000000, 3.000000)">
+                    <path d="M3,0 C3.55228475,0 4,0.44771525 4,1 L4,11 C4,11.5522847 3.55228475,12 3,12 L1,12 C0.44771525,12 0,11.5522847 0,11 L0,1 C0,0.44771525 0.44771525,0 1,0 L3,0 Z M10,0 C10.5522847,0 11,0.44771525 11,1 L11,11 C11,11.5522847 10.5522847,12 10,12 L8,12 C7.44771525,12 7,11.5522847 7,11 L7,1 C7,0.44771525 7.44771525,0 8,0 L10,0 Z M3,1 L1,1 L1,11 L3,11 L3,1 Z M10,1 L8,1 L8,11 L10,11 L10,1 Z" id="Pause-Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
