@@ -1,3 +1,24 @@
-.header {
-  font-size: 20px;
+// @breakpointNarrow: 320px;
+// @breakpointTablet: 600px;
+// @breakpointWide: 900px;
+// @breakpointSuperWide: 1200px;
+
+/* Header.module.scss */
+
+/* Default styles for narrow screens */
+@import './styles/HeaderNarrow.module.scss';
+
+/* Tablet styles for screens wider than 600px */
+@media screen and (min-width: 600px) {
+  @import './styles/HeaderTablet.module.scss';
+}
+
+/* Wide styles for screens wider than 900px */
+@media screen and (min-width: 900px) {
+  @import './styles/HeaderWide.module.scss';
+}
+
+/* Super Wide styles for screens wider than 1200px */
+@media screen and (min-width: 1200px) {
+  @import './styles/HeaderSuperWide.module.scss';
 }

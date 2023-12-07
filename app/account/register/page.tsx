@@ -1,5 +1,7 @@
+import Link from 'next/link';
+
 function Register() {
-  return <h1>This is a Register page</h1>;
+  return <Link href="/account/login">Login</Link>;
 }
 
 export default Register;
