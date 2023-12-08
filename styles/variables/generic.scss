@@ -1,0 +1,37 @@
+/* 
+    ======================================================
+    WARNING: PROJECT-WIDE VARIABLES
+    DO NOT MODIFY OR ADD VARIABLES IN THIS FILE
+    ======================================================
+*/
+
+/* fonts variables */
+
+$font-path: '../public/fonts';
+$font-path-MontblancTypeRegular: '#{$font-path}/MontblancTypeRegular';
+$font-path-MontblancTypeBold: '#{$font-path}/MontblancTypeBold';
+$font-path-MontblancTypeItalic: '#{$font-path}/fonts/MontblancTypeItalic';
+$font-path-MontblancTypeLight: '#{$font-path}/fonts/MontblancTypeLight';
+$font-path-MontblancTypeMedium: '#{$font-path}/MontblancTypeMedium';
+$font-path-AurelieSmithScript: '#{$font-path}/AurelieSmithScript';
+
+/* break points */
+
+$breakpointNarrow: 320px;
+$breakpointTablet: 600px;
+$breakpointWide: 900px;
+$breakpointSuperWide: 1200px;
+
+/* Z-index for components */
+
+$zindex0: 0;
+$zIndex1: 1;
+$zIndex2: 2;
+$zIndex3: 3;
+
+/* grid variables */
+
+$cols: 12;
+$grid-container-width: 100%;
+$gutter-gap: 20px;
+$gutter-gap-home: 30px;

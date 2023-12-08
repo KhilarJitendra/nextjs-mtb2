@@ -1,0 +1,117 @@
+@import '../fontssizes.scss';
+
+@mixin font-reset() {
+  font-weight: normal;
+  font-variant: normal;
+}
+
+@mixin font-antialiasing() {
+  // This mixin is used for most fonts on the site, due to having light text on a dark background. We may want to stop using this mixin when we switch to dark text on a white background.
+  // "on Mac OS X, when ... you set light text on a dark background, you get a fairly ugly effect where the text becomes overly bold, spilling out of its lines. Switching away from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter, countering the bolding effect"
+  // http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-heading-base() {
+  @include font-reset();
+  @include font-antialiasing();
+}
+
+@mixin font-size($font-size, $line-height: false, $letter-spacing: false) {
+  font-size: ($font-size * 10) + px;
+  font-size: ($font-size * 0.625) + rem;
+  @if $line-height {
+    line-height: ($line-height * 10) + px;
+    line-height: ($line-height * 0.625) + rem;
+  }
+  @if $letter-spacing {
+    letter-spacing: ($letter-spacing * 10) + px;
+    letter-spacing: ($letter-spacing * 0.625) + rem;
+  }
+
+  @include font-heading-base();
+}
+
+@mixin h1Narrow() {
+  @include font-size(
+    $h1NarrowFontSize,
+    $h1NarrowLineHeight,
+    $h1NarrowLetterSpacing
+  );
+}
+@mixin h2Narrow() {
+  @include font-size(
+    $h2NarrowFontSize,
+    $h2NarrowLineHeight,
+    $h2NarrowLetterSpacing
+  );
+}
+
+@mixin h3Narrow() {
+  @include font-size(
+    $h3NarrowFontSize,
+    $h3NarrowLineHeight,
+    $h3NarrowLetterSpacing
+  );
+}
+
+@mixin h4Narrow {
+  @include font-size(
+    $h4NarrowFontSize,
+    $h4NarrowLineHeight,
+    $h4NarrowLetterSpacing
+  );
+}
+
+@mixin h5Narrow {
+  @include font-size(
+    $h5NarrowFontSize,
+    $h5NarrowLineHeight,
+    $h5NarrowLetterSpacing
+  );
+}
+
+@mixin h6Narrow {
+  @include font-size(
+    $h6NarrowFontSize,
+    $h6NarrowLineHeight,
+    $h6NarrowLetterSpacing
+  );
+}
+
+@mixin font-size-global {
+  @include font-size(1.4, 2, 0.05);
+}
+
+@mixin font-size-12 {
+  @include font-size(1.2, 2, 0.1);
+}
+
+@mixin h1() {
+  @include font-size($h1WideFontSize, $h1WideLineHeight, $h1WideLetterSpacing);
+}
+
+@mixin h2 {
+  @include font-size($h2WideFontSize, $h2WideLineHeight, $h2WideLetterSpacing);
+}
+
+@mixin h3 {
+  @include font-size($h3WideFontSize, $h3WideLineHeight, $h3WideLetterSpacing);
+}
+
+@mixin h4 {
+  @include font-size($h4WideFontSize, $h4WideLineHeight, $h4WideLetterSpacing);
+}
+
+@mixin h5 {
+  @include font-size($h5WideFontSize, $h5WideLineHeight, $h5WideLetterSpacing);
+}
+
+@mixin h6 {
+  @include font-size($h6WideFontSize, $h6WideLineHeight, $h6WideLetterSpacing);
+}
+
+.mtb-fonts-size {
+  @include h1();
+}
