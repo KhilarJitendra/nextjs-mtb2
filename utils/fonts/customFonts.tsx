@@ -43,4 +43,37 @@ const mtbSmithScript = localFont({
   ],
 });
 
-export { mtbMedium, mtbRegular, mtbSmithScript };
+const mtbBold = localFont({
+  src: [
+    {
+      path: '../../assets/fonts/MontblancTypeBold/MontblancType-Bold.ttf',
+    },
+    {
+      path: '../../assets/fonts/MontblancTypeBold/MontblancType-Bold.woff',
+    },
+  ],
+});
+
+const mtbItalic = localFont({
+  src: [
+    {
+      path: '../../assets/fonts/MontblancTypeItalic/MontblancType-Italic.ttf',
+    },
+    {
+      path: '../../assets/fonts/MontblancTypeItalic/MontblancType-Italic.woff',
+    },
+  ],
+});
+
+const mtbLight = localFont({
+  src: [
+    {
+      path: '../../assets/fonts/MontblancTypeLight/MontblancType-Light.ttf',
+    },
+    {
+      path: '../../assets/fonts/MontblancTypeLight/MontblancType-Light.woff',
+    },
+  ],
+});
+
+export { mtbBold, mtbItalic, mtbLight, mtbMedium, mtbRegular, mtbSmithScript };
