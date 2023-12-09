@@ -1,0 +1,30 @@
+/*
+
+MOBILE 375px
+Grid uses a 20px outer margin and a 20px gutter and 4 columns.
+
+TABLET 768px
+Grid uses a 20px outer margin and a 20px gutter and 12 columns.
+
+
+DESKTOP 1024px
+Grid uses a 30px outer margin and a 20px gutter and 24 columns.
+
+DESKTOP 1440px
+Grid uses a 30px outer margin and a 20px gutter and 24 columns.
+
+*/
+
+@import './styles/GridNarrow.module.scss';
+
+@media screen and (min-width: 768px) {
+  @import './styles/GridTablet.module.scss';
+}
+
+@media screen and (min-width: 1024px) {
+  @import './styles/GridWide.module.scss';
+}
+
+@media screen and (min-width: 1440px) {
+  @import './styles/GridSuperWide.module.scss';
+}

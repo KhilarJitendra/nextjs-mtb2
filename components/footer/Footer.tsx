@@ -1,5 +1,7 @@
+import { mtbRegular } from '@/utils/fonts/customFonts';
+
 function Footer() {
-  return <h1>This is footer</h1>;
+  return <div className={mtbRegular.className}>This is footer</div>;
 }
 
 export default Footer;
