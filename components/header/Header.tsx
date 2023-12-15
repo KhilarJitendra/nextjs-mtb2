@@ -1,7 +1,5 @@
-import { mtbRegular } from '@/utils/fonts/customFonts';
-
 function Header() {
-  return <header className={mtbRegular.className}>This is a Header</header>;
+  return <h1>Header</h1>;
 }
 
 export default Header;

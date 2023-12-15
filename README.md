@@ -49,4 +49,4 @@ To Enable Eslint - We can again enable eslint once this is disabled in a same fi
 
 DESIGN -
 
-https://wednesday.invisionapp.com/overview/Montblanc-Website-Rollout-cl2yl67um002o016630qec1i2/screens?sortBy=1&sortOrder=1&viewLayout=2
+https://www.figma.com/file/KFdJwJnzBo03Uke4I43e0X/INWOOD---eCommerce-Landing-Page-([…])?type=design&node-id=911-735&mode=design&t=yhySFdRzleTJI9nT-0
