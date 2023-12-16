@@ -1,0 +1,51 @@
+$breakpointNarrow: 320px;
+$breakpointTablet: 768px;
+$breakpointWide: 1024px;
+$breakpointSuperWide: 1440px;
+$breakpointExtraSuperWide: 1920px;
+
+.mtb_container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 16px;
+  min-width: 320px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .mtb_container {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mtb_container {
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mtb_container {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    padding-left: 32px;
+    padding-right: 32px;
+    grid-gap: 32px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .mtb_container {
+    padding-left: 150px;
+    padding-right: 150px;
+    grid-gap: 32px;
+  }
+}
