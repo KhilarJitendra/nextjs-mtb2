@@ -1,0 +1,74 @@
+@import '../../../app/_styles/mixin.scss';
+
+.headerContainer {
+  @include font-size(20px, 26.58px, 0.05px, 700);
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background-color: #c4c4c4;
+  align-items: center;
+}
+
+.headerLogo {
+  grid-column: span 4;
+  justify-self: start;
+  display: none;
+}
+
+.headerLogoMobile {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburgerMobile {
+  display: block;
+  grid-column: span 1;
+}
+
+.headerNav {
+  grid-column: span 5;
+  justify-self: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+  justify-content: space-around;
+}
+
+.headerNavLi {
+  //   padding: 10px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.headerNavAnch {
+  text-decoration: none;
+  color: #07484a;
+  //   font-weight: bold;
+
+  &:hover {
+    color: #555;
+  }
+}
+
+.headerRightMenus {
+  grid-column: span 3;
+  justify-self: end;
+  display: none;
+}
+
+.headerRightMenusMobile {
+  display: block;
+  grid-column: none;
+}
+
+.headerIconMobile,
+.headerIcon {
+  display: inline;
+  vertical-align: baseline;
+  margin: 0 6px;
+}

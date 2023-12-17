@@ -1,6 +1,26 @@
-.header {
-  font-size: 35px;
-  span {
-    color: yellow;
-  }
+.headerLogo,
+.hamburger,
+.headerRightMenus {
+  display: block;
+}
+
+.headerLogo {
+  grid-column: span 3;
+}
+
+.hamburger {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.headerRightMenus {
+  grid-column: span 3;
+  justify-self: end;
+}
+
+.headerNav,
+.headerLogoMobile,
+.hamburgerMobile,
+.headerRightMenusMobile {
+  display: none;
 }

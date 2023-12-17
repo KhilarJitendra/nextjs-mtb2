@@ -1,6 +1,23 @@
-.header {
-  font-size: 45px;
-  span {
-    color: orange;
-  }
+.hamburger {
+  display: none;
+}
+
+.headerLogo {
+  grid-column: span 4;
+}
+
+.headerNav {
+  grid-column: span 4;
+  justify-self: center;
+
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headerRightMenus {
+  grid-column: span 4;
+  justify-self: end;
 }
