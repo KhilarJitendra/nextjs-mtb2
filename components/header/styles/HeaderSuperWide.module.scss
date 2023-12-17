@@ -1,25 +1,13 @@
-.hamburger {
-  @include hide;
-}
-
 .headerLogo {
   @include gridColumnSpan(4);
 }
 
 .headerNav {
   @include gridColumnSpan(4);
-  justify-self: center;
-
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  justify-content: space-around;
 }
 
 .headerRightMenus {
   @include gridColumnSpan(4);
-  justify-self: end;
 }
 
 .headerIconMobile,

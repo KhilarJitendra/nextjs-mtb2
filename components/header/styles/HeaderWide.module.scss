@@ -1,1 +1,22 @@
+.hamburger {
+  @include hide;
+}
 
+.headerLogo {
+  @include gridColumnSpan(3);
+}
+
+.headerNav {
+  @include gridColumnSpan(2);
+  display: flex;
+}
+
+.headerRightMenus {
+  @include gridColumnSpan(3);
+  justify-self: end;
+}
+
+.headerIconMobile,
+.headerIcon {
+  margin: 0 12px;
+}
