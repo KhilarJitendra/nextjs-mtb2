@@ -1,6 +1,56 @@
+/* Font face */
+
 @mixin font-size($size, $line-height, $letter-spacing, $weight: normal) {
   font-size: $size;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
   font-weight: $weight;
+}
+
+@mixin customGrid($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, minmax(0, 1fr));
+  grid-gap: $gap;
+}
+
+@mixin gridColumnSpan($span) {
+  grid-column: span $span;
+}
+
+@mixin hide() {
+  display: none;
+  -webkit-display: none;
+  -moz-display: none;
+  -ms-display: none;
+  -o-display: none;
+}
+
+@mixin setDisplay($displayValue) {
+  display: $displayValue;
+  -webkit-display: $displayValue;
+  -moz-display: $displayValue;
+  -ms-display: $displayValue;
+  -o-display: $displayValue;
+}
+
+@mixin underlineFromLeftToRight($color, $transition-duration) {
+  position: relative;
+  text-decoration: none;
+  color: $color;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $color;
+    transition: width $transition-duration ease-in-out;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
 }

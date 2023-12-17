@@ -1,74 +1,64 @@
-@import '../../../app/_styles/mixin.scss';
-
 .headerContainer {
   @include font-size(20px, 26.58px, 0.05px, 700);
 
   padding-top: 26px;
   padding-bottom: 26px;
-  background-color: #c4c4c4;
+  background-color: var(--mtb-primary-col1);
   align-items: center;
 }
 
 .headerLogo {
-  grid-column: span 4;
+  @include gridColumnSpan(4);
+  @include hide;
   justify-self: start;
-  display: none;
-}
-
-.headerLogoMobile {
-  display: block;
 }
 
 .hamburger {
-  display: none;
+  @include hide;
 }
 
 .hamburgerMobile {
-  display: block;
-  grid-column: span 1;
+  @include gridColumnSpan(1);
+  @include setDisplay(block);
 }
 
 .headerNav {
-  grid-column: span 5;
+  @include gridColumnSpan(5);
+  @include hide;
   justify-self: center;
   list-style: none;
   padding: 0px;
   margin: 0px;
-  display: none;
-  justify-content: space-around;
 }
 
 .headerNavLi {
-  //   padding: 10px 15px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 10px;
 }
 
 .headerNavAnch {
-  text-decoration: none;
-  color: #07484a;
-  //   font-weight: bold;
-
-  &:hover {
-    color: #555;
-  }
+  color: var(--mtb-primary-col2);
+  @include underlineFromLeftToRight(
+    $color: var(--mtb-primary-col2),
+    $transition-duration: 0.5s
+  );
 }
 
 .headerRightMenus {
-  grid-column: span 3;
+  @include gridColumnSpan(3);
+  @include hide;
   justify-self: end;
-  display: none;
 }
 
 .headerRightMenusMobile {
-  display: block;
+  @include setDisplay(block);
   grid-column: none;
 }
 
 .headerIconMobile,
 .headerIcon {
-  display: inline;
+  @include setDisplay(inline);
   vertical-align: baseline;
   margin: 0 6px;
 }

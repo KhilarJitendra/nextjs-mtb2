@@ -1,7 +1,5 @@
-// $breakpointNarrow: 320px;
-$breakpointTablet: 768px;
-$breakpointWide: 1024px;
-$breakpointSuperWide: 1440px;
+@import '../../app/_styles/variables/breakpoints.scss';
+@import '../../app/_styles/mixin.scss';
 
 @import './styles/HeaderNarrow.module.scss';
 

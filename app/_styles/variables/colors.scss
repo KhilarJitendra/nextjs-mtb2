@@ -5,30 +5,13 @@
     ======================================================
 */
 
-$mtb-primary: #fff;
-$mtb-secondary: #000;
-$mtb-grey: #34302d;
-$mtb-grey-1: #f1f1f1;
-$mtb-grey-2: #e0e0e0;
-$mtb-grey-3: #666;
-$mtb-grey-4: #eee;
-$mtb-grey-5: #777;
-$mtb-grey-6: #f2f2f2;
-$mtb-grey-7: #8a8a8a;
-$mtb-grey-8: #222;
-$mtb-red: #cc0000;
-$mtb-yellow: #ffea02;
-$mtb-green: #5ea908;
-$mtb-grey-9: #ababab;
-$mtb-grey-10: #acacac;
-$mtb-grey-11: #d7d7d7;
-$mtb-gold: #f3f1ec;
-$mtb-blue: #00629b;
-$mtb-dark-grey: #6e6e6e;
-$mtb-light-grey: #f2f2f2;
-$mtb-red: #d10f02;
-$mtb-beige: #f3f1ec;
-$mtb-transparent: transparent;
-$mtb-search-grey: #ebebeb;
-$mtb-search-grey1: #e1e1e1;
-$mtb-giftguide-goldenrod: #daa520;
+:root {
+  --mtb-primary-col1: #c4c4c4;
+  --mtb-primary-col2: #07484a;
+
+  --mtb-secondary-col1: #caf3e5;
+  --mtb-secondary-col2: #e0eff6;
+  --mtb-secondary-col3: #eeebff;
+  --mtb-secondary-col4: #fff4e7;
+  --mtb-secondary-col5: #fdfbf8;
+}
