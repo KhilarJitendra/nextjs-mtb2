@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="11px" height="6px" viewBox="0 0 11 6" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <title>Icon / Chevron / Bottom</title>
-    <g id="02-Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <g id="02-Style-Guide" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" stroke-linecap="round" stroke-linejoin="round">
         <g id="04-Icons-&amp;-UI-Elements" transform="translate(-466.000000, -1335.000000)" stroke="#000000">
             <g id="Chevron-Icon" transform="translate(466.000000, 1335.000000)">
                 <polyline transform="translate(5.500000, 3.000000) rotate(90.000000) translate(-5.500000, -3.000000) " points="3 -2 8 3 3 8"></polyline>

@@ -11,15 +11,18 @@
   @include gridColumnSpan(4);
   @include hide;
   justify-self: start;
+  cursor: pointer;
 }
 
 .hamburger {
   @include hide;
+  cursor: pointer;
 }
 
 .hamburgerMobile {
   @include gridColumnSpan(1);
   @include setDisplay(block);
+  cursor: pointer;
 }
 
 .headerNav {
@@ -61,4 +64,5 @@
   @include setDisplay(inline);
   vertical-align: baseline;
   margin: 0 6px;
+  cursor: pointer;
 }

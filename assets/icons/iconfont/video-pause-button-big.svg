@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Button / Round / Pause</title>
-    <g id="01-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="01-Design" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="03-[1440]-PLP/PDP-Content-Modules-01-[1440]-Homepage-Modules-(2022-Update)-—-Pt-1" transform="translate(-1466.000000, -5983.000000)">
             <g id="Video-16:9-—-Full-Bleed" transform="translate(100.000000, 5427.000000)">
                 <g id="Group" transform="translate(1366.000000, 556.000000)">
                     <circle id="Oval" fill="#FFFFFF" cx="22" cy="22" r="22"></circle>
-                    <g transform="translate(17.000000, 16.000000)" fill="#000000" fill-rule="nonzero" id="Pause-Icon">
+                    <g transform="translate(17.000000, 16.000000)" fill="#000000" fillRule="nonzero" id="Pause-Icon">
                         <g>
                             <path d="M3,0 C3.55228475,0 4,0.44771525 4,1 L4,11 C4,11.5522847 3.55228475,12 3,12 L1,12 C0.44771525,12 0,11.5522847 0,11 L0,1 C0,0.44771525 0.44771525,0 1,0 L3,0 Z M10,0 C10.5522847,0 11,0.44771525 11,1 L11,11 C11,11.5522847 10.5522847,12 10,12 L8,12 C7.44771525,12 7,11.5522847 7,11 L7,1 C7,0.44771525 7.44771525,0 8,0 L10,0 Z M3,1 L1,1 L1,11 L3,11 L3,1 Z M10,1 L8,1 L8,11 L10,11 L10,1 Z"></path>
                         </g>
