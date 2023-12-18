@@ -1,0 +1,16 @@
+@import '../../app/_styles/variables/breakpoints.scss';
+@import '../../app/_styles/mixin.scss';
+
+@import './styles/HeroNarrow.module.scss';
+
+@media screen and (min-width: $breakpointTablet) {
+  @import './styles/HeroTablet.module.scss';
+}
+
+@media screen and (min-width: $breakpointWide) {
+  @import './styles/HeroWide.module.scss';
+}
+
+@media screen and (min-width: $breakpointSuperWide) {
+  @import './styles/HeroSuperWide.module.scss';
+}

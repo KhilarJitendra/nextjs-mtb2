@@ -359,3 +359,91 @@ export const HamburgerIcon = ({ width, height }: IconsTypes) => {
     </svg>
   );
 };
+
+export const PlayIcon = ({ width, height }: IconsTypes) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 44 44"
+      version="1.1"
+    >
+      <title>4B981223-2514-4F17-A43C-513D713A3D8C</title>
+      <g
+        id="01-Design"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <g
+          id="02-[1440]-PDP-—-Video-Player-Fulscreen-—-Play-Button"
+          transform="translate(-698.000000, -383.000000)"
+        >
+          <g
+            id="Button-/-Round-/-Play"
+            transform="translate(698.000000, 383.000000)"
+          >
+            <circle id="Oval" fill="#c4c4c4" cx="22" cy="22" r="22" />
+            <g
+              id="Icon-/-Play-/-Black"
+              transform="translate(18.000000, 15.000000)"
+              stroke="#000000"
+            >
+              <path
+                d="M1.5,1.6115555 C1.67705464,1.6115555 1.85093497,1.6585639 2.00387103,1.7477766 L2.00387103,1.7477766 L9.52691874,6.1362211 C9.7654447,6.27536124 9.92499174,6.49801074 9.99012225,6.7455067 C10.0552528,6.99300266 10.0259668,7.26534507 9.88682662,7.50387103 C9.79990783,7.65287466 9.67592238,7.77686011 9.52691874,7.8637789 L9.52691874,7.8637789 L2.00387103,12.2522234 C1.76534507,12.3913635 1.49300266,12.4206496 1.2455067,12.355519 C0.998010744,12.2903885 0.775361241,12.1308415 0.636221099,11.8923155 C0.547008398,11.7393795 0.5,11.5654991 0.5,11.3884445 L0.5,11.3884445 L0.5,2.6115555 C0.5,2.33541312 0.611928813,2.08541312 0.792893219,1.90444872 C0.973857625,1.72348431 1.22385763,1.6115555 1.5,1.6115555 Z"
+                id="Rectangle"
+              />
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+};
+
+export const PauseIcon = ({ width, height }: IconsTypes) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 44 44"
+      version="1.1"
+    >
+      <title>Button / Round / Pause</title>
+      <g
+        id="01-Design"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <g
+          id="03-[1440]-PLP/PDP-Content-Modules-01-[1440]-Homepage-Modules-(2022-Update)-—-Pt-1"
+          transform="translate(-1466.000000, -5983.000000)"
+        >
+          <g
+            id="Video-16:9-—-Full-Bleed"
+            transform="translate(100.000000, 5427.000000)"
+          >
+            <g id="Group" transform="translate(1366.000000, 556.000000)">
+              <circle id="Oval" fill="none" cx="22" cy="22" r="22" />
+              <g
+                transform="translate(17.000000, 16.000000)"
+                fill="#000000"
+                fill-rule="nonzero"
+                id="Pause-Icon"
+              >
+                <g>
+                  <path d="M3,0 C3.55228475,0 4,0.44771525 4,1 L4,11 C4,11.5522847 3.55228475,12 3,12 L1,12 C0.44771525,12 0,11.5522847 0,11 L0,1 C0,0.44771525 0.44771525,0 1,0 L3,0 Z M10,0 C10.5522847,0 11,0.44771525 11,1 L11,11 C11,11.5522847 10.5522847,12 10,12 L8,12 C7.44771525,12 7,11.5522847 7,11 L7,1 C7,0.44771525 7.44771525,0 8,0 L10,0 Z M3,1 L1,1 L1,11 L3,11 L3,1 Z M10,1 L8,1 L8,11 L10,11 L10,1 Z" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+};
