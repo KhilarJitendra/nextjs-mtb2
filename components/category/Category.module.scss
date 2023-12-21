@@ -1,0 +1,16 @@
+@import '../../app/_styles/variables/breakpoints.scss';
+@import '../../app/_styles/mixin.scss';
+
+@import './styles/CategoryNarrow.module.scss';
+
+@media screen and (min-width: $breakpointTablet) {
+  @import './styles/CategoryTablet.module.scss';
+}
+
+@media screen and (min-width: $breakpointWide) {
+  @import './styles/CategoryWide.module.scss';
+}
+
+@media screen and (min-width: $breakpointSuperWide) {
+  @import './styles/CategorySuperWide.module.scss';
+}
