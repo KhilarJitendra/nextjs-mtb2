@@ -1,0 +1,20 @@
+.button {
+  @include setDisplay(inline-block);
+  @include font-size(14px, 20px, 0.5px, 400);
+  border: 0px;
+  font-variant: normal;
+  padding: 0.75rem 2.5rem;
+  width: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary_btn {
+  background-color: var(--mtb-primary-col3);
+  color: var(--mtb-secondary-col5);
+}
+
+.secondary_btn {
+  background-color: var(--mtb-secondary-col2);
+  color: var(--mtb-primary-col2);
+}
