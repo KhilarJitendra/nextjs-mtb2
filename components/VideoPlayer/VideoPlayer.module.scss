@@ -1,16 +1,1 @@
-@import '../../app/_styles/variables/breakpoints.scss';
-@import '../../app/_styles/mixin.scss';
-
 @import './styles/VideoPlayerNarrow.module.scss';
-
-@media screen and (min-width: $breakpointTablet) {
-  @import './styles/VideoPlayerTablet.module.scss';
-}
-
-@media screen and (min-width: $breakpointWide) {
-  @import './styles/VideoPlayerWide.module.scss';
-}
-
-@media screen and (min-width: $breakpointSuperWide) {
-  @import './styles/VideoPlayerSuperWide.module.scss';
-}
