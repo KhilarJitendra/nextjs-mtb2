@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { PauseIcon, PlayIcon } from '../../icons/icons';
 import Style from './VideoPlayer.module.scss';
 
@@ -24,6 +24,16 @@ const VideoPlayer = ({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
+  useEffect(() => {
+    if (autoPlay) {
+      // If autoplay is set, play the video and update the state
+      if (videoRef.current) {
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  }, [autoPlay]);
+
   const handleTogglePlay = () => {
     if (videoRef.current) {
       if (isPlaying) {
@@ -45,6 +55,9 @@ const VideoPlayer = ({
 
   const handleVideoEnd = () => {
     setIsPlaying(false);
+    if (onEnded) {
+      onEnded();
+    }
   };
 
   return (
@@ -68,18 +81,20 @@ const VideoPlayer = ({
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className={Style.overlay}>
-        <button
-          className={Style.playPauseButton}
-          onClick={isPlaying ? handlePause : handleTogglePlay}
-        >
-          {isPlaying ? (
-            <PauseIcon width={44} height={44} />
-          ) : (
-            <PlayIcon width={44} height={44} />
-          )}
-        </button>
-      </div>
+      {autoPlay ? null : (
+        <div className={Style.overlay}>
+          <button
+            className={Style.playPauseButton}
+            onClick={isPlaying ? handlePause : handleTogglePlay}
+          >
+            {isPlaying ? (
+              <PauseIcon width={44} height={44} />
+            ) : (
+              <PlayIcon width={44} height={44} />
+            )}
+          </button>
+        </div>
+      )}
     </div>
   );
 };
