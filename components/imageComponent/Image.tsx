@@ -1,15 +1,6 @@
 import Image from 'next/image';
 
-interface ImageComponentProps {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  layout?: 'responsive' | 'fixed' | 'fill' | 'intrinsic';
-  objectFit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
-  objectPosition?: string;
-  priority?: boolean;
-}
+import ImageComponentProps from './Image.types';
 
 const ImageComponent = ({
   src,
