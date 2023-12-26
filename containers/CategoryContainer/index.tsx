@@ -1,7 +1,8 @@
 import Style from './Category.module.scss';
 
-import ImageComponent from '@/components/imageComponent/Image';
 import ImageComponentProps from '@/components/imageComponent/Image.types';
+
+import Card from '@/components/card/Card';
 
 interface CatImagesProps {
   category: string;
@@ -10,7 +11,7 @@ interface CatImagesProps {
 }
 
 interface CategoryContainerProps extends ImageComponentProps {
-  catImages: CatImagesProps[];
+  catImages?: CatImagesProps[];
 }
 
 import { Open_Sans } from 'next/font/google';
@@ -21,32 +22,31 @@ const openSans = Open_Sans({
   display: 'swap',
 });
 
-const CategoryContainer = async ({
-  catImages,
-  width,
-  height,
-  layout,
-}: CategoryContainerProps) => {
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+async function getData() {
+  const res = await fetch('http://localhost:1337/api/homepages?populate=*', {
+    cache: 'force-cache',
+  });
+
+  //   await new Promise((resolve) => setTimeout(resolve, 30000));
+
+  if (!res.ok) {
+    throw new Error('Failed To fetch data');
+  }
+
+  return res.json();
+}
+
+const CategoryContainer = async () => {
+  const data = await getData();
+
+  const url = data.data[0].attributes.heroVideo;
+  const categories = data.data[0].attributes.categories;
 
   return (
     <div className={`${Style.category_conatiner} ${openSans.className}`}>
       <h2 className={Style.category_conatiner_title}> CATEGORY </h2>
-      <div className={Style.category_card_container}>
-        {catImages &&
-          catImages.map(({ category, imageURL, alt }) => (
-            <div className={Style.card} key={category}>
-              <ImageComponent
-                src={imageURL}
-                alt={alt}
-                width={width}
-                height={height}
-                layout={layout}
-              />
-              <p className={Style.card_desc}>{category}</p>
-            </div>
-          ))}
-      </div>
+
+      <Card Images={categories} width={355} height={236} src="" alt="" />
     </div>
   );
 };

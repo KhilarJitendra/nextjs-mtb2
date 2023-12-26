@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import ImageComponentProps from './Image.types';
 
-const ImageComponent = ({
+const ImageComponent = async ({
   src,
   alt,
   width,
@@ -12,6 +12,7 @@ const ImageComponent = ({
   objectPosition,
   priority,
 }: ImageComponentProps) => {
+  const data = await new Promise((resolve) => setTimeout(resolve, 10000));
   return (
     <Image
       src={src}
