@@ -1,25 +1,15 @@
 import VideoPlayer from '@/components/VideoPlayer/VideoPlayer';
-import VideoPlayerProps from '@/components/VideoPlayer/VideoPlayer.types';
 
-interface HeroContainerProps extends VideoPlayerProps {}
+import { getStrapiData } from '@/libs/strapi';
 
-const HeroContainer = ({
-  src,
-  poster,
-  muted,
-  loop,
-  autoPlay,
-}: HeroContainerProps) => {
+const HeroContainer = async () => {
+  const data = await getStrapiData();
+  const url = data.data[0].attributes.heroVideo;
+
   return (
     <div className="mtb_herosection_container">
       <div className="mtb_herosection_item">
-        <VideoPlayer
-          src={src}
-          poster={poster}
-          muted={muted}
-          loop={loop}
-          autoPlay={autoPlay}
-        />
+        <VideoPlayer src={url} muted={true} loop={true} autoPlay={true} />
       </div>
     </div>
   );

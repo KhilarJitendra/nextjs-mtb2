@@ -19,6 +19,9 @@
   },
   "dependencies": {
     "@csstools/normalize.css": "^12.0.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.2",
     "@pinecone-database/pinecone": "^1.1.2",
     "@types/react-slick": "^0.23.13",
     "next": "14.0.3",
