@@ -19,7 +19,7 @@ interface CardProps extends ImageComponentProps {
 
 const Card = async ({ Images, width, height, layout }: CardProps) => {
   return (
-    <div className={Style.category_card_container}>
+    <div className={Style.card_container}>
       {Images &&
         Images.map(({ category, imageURL, alt }) => (
           <div className={Style.card} key={category}>
@@ -29,6 +29,7 @@ const Card = async ({ Images, width, height, layout }: CardProps) => {
                   variant="rectangular"
                   width={width}
                   height={height}
+                  style={{ background: '#c4c4c4' }}
                   animation="wave"
                 />
               }

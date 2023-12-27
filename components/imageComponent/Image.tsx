@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import ImageComponentProps from './Image.types';
 
 const ImageComponent = async ({
@@ -12,7 +11,7 @@ const ImageComponent = async ({
   objectPosition,
   priority,
 }: ImageComponentProps) => {
-  const data = await new Promise((resolve) => setTimeout(resolve, 10000));
+  //   const data = await new Promise((resolve) => setTimeout(resolve, 100000));
   return (
     <Image
       src={src}
@@ -23,6 +22,7 @@ const ImageComponent = async ({
       objectFit={objectFit}
       objectPosition={objectPosition}
       priority={priority}
+      sizes="(min-width: 320px) 100vw, (max-width: 768px) 50vw, (max-width: 1200px) 33vw"
     />
   );
 };

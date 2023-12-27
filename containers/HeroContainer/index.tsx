@@ -1,5 +1,4 @@
 import VideoPlayer from '@/components/VideoPlayer/VideoPlayer';
-
 import { getStrapiData } from '@/libs/strapi';
 
 const HeroContainer = async () => {

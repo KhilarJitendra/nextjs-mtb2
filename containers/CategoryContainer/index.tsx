@@ -27,7 +27,7 @@ const CategoryContainer = async () => {
   return (
     <div className={`${Style.category_conatiner} ${openSans.className}`}>
       <h2 className={Style.category_conatiner_title}> CATEGORY </h2>
-      <Card Images={categories} width={355} height={236} src="" alt="" />
+      <Card Images={categories} width={322} height={236} src="" alt="" />
     </div>
   );
 };

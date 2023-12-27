@@ -1,3 +1,7 @@
 @import '../../app/_styles/variables/breakpoints.scss';
 @import '../../app/_styles/mixin.scss';
 @import './styles/CardNarrow.module.scss';
+
+@media screen and (min-width: $breakpointTablet) {
+  @import './styles/CardTablet.module.scss';
+}
