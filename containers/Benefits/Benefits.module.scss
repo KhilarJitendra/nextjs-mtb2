@@ -1,16 +1,16 @@
 @import '../../app/_styles/variables/breakpoints.scss';
 @import '../../app/_styles/mixin.scss';
 
-@import './styles/PopularNarrow.module.scss';
+@import './styles/BenefitsNarrow.module.scss';
 
 @media screen and (min-width: $breakpointTablet) {
-  @import './styles/PopularTablet.module.scss';
+  @import './styles/BenefitsTablet.module.scss';
 }
 
 @media screen and (min-width: $breakpointWide) {
-  @import './styles/PopularWide.module.scss';
+  @import './styles/BenefitsWide.module.scss';
 }
 
 @media screen and (min-width: $breakpointSuperWide) {
-  @import './styles/PopularSuperWide.module.scss';
+  @import './styles/BenefitsSuperWide.module.scss';
 }

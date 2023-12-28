@@ -29,7 +29,7 @@ const Card = async ({ Images, width, height, layout }: CardProps) => {
                   variant="rectangular"
                   width={width}
                   height={height}
-                  style={{ background: '#c4c4c4' }}
+                  style={{ background: '#D9D9D9' }}
                   animation="wave"
                 />
               }

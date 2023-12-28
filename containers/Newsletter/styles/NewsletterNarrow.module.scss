@@ -1,0 +1,14 @@
+.newsletter_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter_container_leftside {
+  flex: 100%;
+  position: relative;
+  height: 280px;
+}
+
+.newsletter_container_rightside {
+  flex: 100%;
+}
