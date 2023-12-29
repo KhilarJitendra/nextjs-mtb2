@@ -1,6 +1,6 @@
 import Card from '@/components/card/Card';
 import ImageComponentProps from '@/components/imageComponent/Image.types';
-import { getStrapiData } from '@/libs/strapi';
+// import { getStrapiData } from '@/libs/strapi';
 import { Open_Sans } from 'next/font/google';
 import Style from './Category.module.scss';
 
@@ -21,7 +21,7 @@ const openSans = Open_Sans({
 });
 
 const CategoryContainer = async () => {
-  const data = await getStrapiData();
+  //   const data = await getStrapiData();
   const categories = data.data[0].attributes.categories;
 
   return (
