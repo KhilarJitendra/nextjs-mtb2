@@ -1,3 +1,4 @@
+import Slider from '@/components/carousel/carousel';
 import BenefitContainer from '@/containers/Benefits/index';
 import CategoryContainer from '@/containers/CategoryContainer/index';
 import HeroContainer from '@/containers/HeroContainer/index';
@@ -12,6 +13,7 @@ export default async function Home() {
       <CategoryContainer />
       <Newsletter />
       <BenefitContainer />
+      <Slider />
     </main>
   );
 }

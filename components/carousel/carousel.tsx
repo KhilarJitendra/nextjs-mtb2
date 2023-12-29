@@ -23,24 +23,24 @@ const responsive = {
 const sliderImageUrl = [
   //First image url
   {
-    url: 'https://i2.wp.com/www.geeksaresexy.net/wp-content/uploads/2020/04/movie1.jpg?resize=600%2C892&ssl=1',
+    url: 'http://localhost:3000/_next/image?url=http%3A%2F%2Flocalhost%3A1337%2Fuploads%2Fmtb2_24eeb63dc1.jpg&w=3840&q=75',
   },
   {
-    url: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-kids-movies-2020-call-of-the-wild-1579042974.jpg?crop=0.9760858955588091xw:1xh;center,top&resize=480:*',
+    url: 'http://localhost:3000/_next/image?url=http%3A%2F%2Flocalhost%3A1337%2Fuploads%2Fmtb2_24eeb63dc1.jpg&w=3840&q=75',
   },
   //Second image url
   {
-    url: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-for-kids-2020-sonic-the-hedgehog-1571173983.jpg?crop=0.9871668311944719xw:1xh;center,top&resize=480:*',
+    url: 'http://localhost:3000/_next/image?url=http%3A%2F%2Flocalhost%3A1337%2Fuploads%2Fmtb2_24eeb63dc1.jpg&w=3840&q=75',
   },
   //Third image url
   {
-    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS82ET2bq9oTNwPOL8gqyoLoLfeqJJJWJmKQ&usqp=CAU',
+    url: 'http://localhost:3000/_next/image?url=http%3A%2F%2Flocalhost%3A1337%2Fuploads%2Fmtb2_24eeb63dc1.jpg&w=3840&q=75',
   },
 
   //Fourth image url
 
   {
-    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdvuww0JDC7nFRxiFL6yFiAxRJgM-1tvJTxA&usqp=CAU',
+    url: 'http://localhost:3000/_next/image?url=http%3A%2F%2Flocalhost%3A1337%2Fuploads%2Fmtb2_24eeb63dc1.jpg&w=3840&q=75',
   },
 ];
 const Slider = () => {

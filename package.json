@@ -23,12 +23,10 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.2",
     "@pinecone-database/pinecone": "^1.1.2",
-    "@types/react-slick": "^0.23.13",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "react-multi-carousel": "^2.8.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
