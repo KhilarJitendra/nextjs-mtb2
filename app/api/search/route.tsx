@@ -1,15 +1,16 @@
 
 import { NextResponse } from 'next/server';
 
-import { getResults } from '../../../libs/search';
+// import { getResults } from '../../../libs/search';
 
 export const GET = async (req: Request, res: Response) => {
   try {
-    const results = await getResults();
+    // const results = await getResults();
 
-    console.log('Data', results);
+    // console.log('Data', results);
 
-    return NextResponse.json({ message: 'OK', results }, { status: 200 });
+    // return NextResponse.json({ message: 'OK', results }, { status: 200 });
+    return NextResponse.json({ message: 'OK'}, { status: 200 });
   } catch (err) {
     NextResponse.json(
       {
