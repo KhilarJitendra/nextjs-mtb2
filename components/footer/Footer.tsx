@@ -1,5 +1,9 @@
 import { Open_Sans } from 'next/font/google';
 
+import { FacebookIcon, InstaIcon, LinkedinIcon, Twitter } from '@/icons/icons';
+
+import Link from 'next/link';
+
 const openSans = Open_Sans({
   subsets: ['latin'],
   weight: '400',
@@ -14,16 +18,16 @@ function Footer() {
           <h4>company</h4>
           <ul>
             <li>
-              <a href="#">about us</a>
+              <Link href="/"> about us </Link>
             </li>
             <li>
-              <a href="#">our services</a>
+              <Link href="/"> our services </Link>
             </li>
             <li>
-              <a href="#">privacy policy</a>
+              <Link href="/"> privacy policy </Link>
             </li>
             <li>
-              <a href="#">visit website</a>
+              <Link href="/"> visit website </Link>
             </li>
           </ul>
         </div>
@@ -31,19 +35,19 @@ function Footer() {
           <h4>get help</h4>
           <ul>
             <li>
-              <a href="#">FAQ</a>
+              <Link href="/"> FAQ </Link>
             </li>
             <li>
-              <a href="#">shipping</a>
+              <Link href="/"> shipping </Link>
             </li>
             <li>
-              <a href="#">returns</a>
+              <Link href="/"> returns </Link>
             </li>
             <li>
-              <a href="#">order status</a>
+              <Link href="/"> order status </Link>
             </li>
             <li>
-              <a href="#">payment options</a>
+              <Link href="/"> payment options </Link>
             </li>
           </ul>
         </div>
@@ -51,34 +55,37 @@ function Footer() {
           <h4>online shop</h4>
           <ul>
             <li>
-              <a href="#">download</a>
+              <Link href="/"> download </Link>
             </li>
             <li>
-              <a href="#">changelog</a>
+              <Link href="/"> changelog </Link>
             </li>
             <li>
-              <a href="#">github</a>
+              <Link href="/"> github</Link>
             </li>
             <li>
-              <a href="#">all version</a>
+              <Link href="/">all version</Link>
             </li>
           </ul>
         </div>
         <div className="footer-col">
           <h4>follow us</h4>
           <div className="social-links">
-            <a href="#">
-              <i className="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#">
-              <i className="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i className="fa-brands fa-linkedin-in"></i>
-            </a>
+            <Link href="/">
+              <FacebookIcon width={27} height={28} />
+            </Link>
+
+            <Link href="/">
+              <InstaIcon width={27} height={28} />{' '}
+            </Link>
+
+            <Link href="/">
+              <LinkedinIcon width={27} height={28} />
+            </Link>
+
+            <Link href="/">
+              <Twitter width={27} height={28} />
+            </Link>
           </div>
         </div>
       </div>

@@ -10,6 +10,8 @@ import Style from './Header.module.scss';
 
 import { Playfair_Display } from 'next/font/google';
 
+import Link from 'next/link';
+
 const playFair = Playfair_Display({
   subsets: ['latin'],
   weight: '400',
@@ -35,34 +37,29 @@ function Header() {
 
       <ul className={Style.headerNav}>
         <li className={Style.headerNavLi}>
-          {' '}
-          <a className={Style.headerNavAnch} href="">
+          <Link className={Style.headerNavAnch} href="/">
             Home
-          </a>
+          </Link>
         </li>
         <li className={Style.headerNavLi}>
-          {' '}
-          <a className={Style.headerNavAnch} href="">
+          <Link className={Style.headerNavAnch} href="/">
             Products
-          </a>
+          </Link>
         </li>
         <li className={Style.headerNavLi}>
-          {' '}
-          <a className={Style.headerNavAnch} href="">
+          <Link className={Style.headerNavAnch} href="/">
             Categories
-          </a>
+          </Link>
         </li>
         <li className={Style.headerNavLi}>
-          {' '}
-          <a className={Style.headerNavAnch} href="">
+          <Link className={Style.headerNavAnch} href="/">
             About
-          </a>
+          </Link>
         </li>
         <li className={Style.headerNavLi}>
-          {' '}
-          <a className={Style.headerNavAnch} href="">
+          <Link className={Style.headerNavAnch} href="/">
             Contacts
-          </a>
+          </Link>
         </li>
       </ul>
 
