@@ -3,15 +3,16 @@
 @import './_styles/variables/colors.scss';
 @import './_styles/mixin.scss';
 
-//  FOOTER CSS - TO DO   //
+/* FOOTER CSS - TO DO Component level  */
 .footer {
   background-color: #f3f6f5;
   padding: 80px 0;
 }
 
 .container {
-  max-width: 1170px;
-  margin: auto;
+  //   max-width: 1170px;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
 .row {
@@ -24,14 +25,11 @@ ul {
 }
 
 .footer-col {
-  width: 25%;
+  flex: 25%;
   padding: 0 15px;
 }
 
 .footer-col h4 {
-  //   font-size: 18px;
-  //   color: #fff;
-
   @include font-size(18px, 2.4);
   color: #07484a;
 
@@ -48,7 +46,6 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  //   background-color: #e91e63;
   width: 50px;
   height: 2px;
 }
@@ -60,7 +57,6 @@ ul {
 .footer-col ul li a {
   color: #07484a;
   display: block;
-  //   font-size: 1rem;
   font-weight: 300;
   text-transform: capitalize;
   text-decoration: none;
@@ -69,7 +65,6 @@ ul {
 }
 
 .footer-col ul li a:hover {
-  //   color: #fff;
   padding-left: 7px;
 }
 
@@ -88,20 +83,24 @@ ul {
 
 .footer-col .social-links a:hover {
   color: #151515;
-  //   background-color: #fff;
 }
 
 @media (max-width: 767px) {
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
   .footer-col {
-    width: 50%;
+    flex: 50%;
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 574px) {
   .footer-col {
-    width: 100%;
+    flex: 100%;
   }
 }
 
-//  FOOTER CSS - TO DO   //
+/*  FOOTER CSS Ends here   */
