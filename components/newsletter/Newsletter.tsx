@@ -4,11 +4,11 @@ const NewsLetter = () => {
   return (
     <div className={Style.newsletter_container}>
       <div className={Style.newsletter_container_lefttside}>
-        <img
+        {/* <img
           src="http://localhost:1337/uploads/mtb2_24eeb63dc1.jpg"
           alt=""
           className={Style.newsletter_container_img}
-        />
+        /> */}
       </div>
 
       <div className={Style.newsletter_container_rightside}>

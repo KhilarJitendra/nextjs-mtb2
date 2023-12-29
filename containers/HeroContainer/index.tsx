@@ -1,3 +1,5 @@
+'use client';
+
 import VideoPlayer from '@/components/VideoPlayer/VideoPlayer';
 import { getStrapiData } from '@/libs/strapi';
 
