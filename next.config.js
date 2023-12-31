@@ -14,6 +14,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
+
+      {
+        protocol: 'https',
+        hostname: 'tremendous-blessing-a56a4e060b.media.strapiapp.com',
+      },
     ],
   },
 };
